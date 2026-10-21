@@ -122,36 +122,121 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         >
 
 
-        <label>Password</label>
+        <label for="password">Password</label>
+        <div class="password-wrapper" style="position: relative; width: 100%;">
 
         <input
             type="password"
             name="password"
             id="password"
             placeholder="Enter password"
+            autocomplete="new-password"
             required
         >
         <button
             type="button"
+            class="password-toggle"
             onclick="togglePassword('password')"
+            aria-label="Show password"
+            aria-pressed="false"
+             style="
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                width: 36px;
+                height: 36px;
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                color: #555;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 10;
+            "
         >
-            Show / Hide Password
+            <svg
+                class="eye-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+           >
+                <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+            
         </button>
+    </div>
 
+        <label for="confirm_password">Confirm Password</label>
 
-        <label>Confirm Password</label>
-
+        <div class="password-wrapper" style="position: relative; width: 100%;">
+     
         <input
             type="password"
             name="confirm_password"
+            id="confirm_password"
             placeholder="Confirm password"
+            autocomplete="new-password"
             required
         >
-
+        <button
+            type="button"
+            class="password-toggle"
+            onclick="togglePassword('password')"
+            aria-label="Show password"
+            aria-pressed="false"
+            style="
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                width: 36px;
+                height: 36px;
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                color: #555;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 10;
+            "
+       >
+            <svg
+                class="eye-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+           >
+                <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+        </button>
+    </div>
 
         <button type="submit">
             Register
-        </button>
+        </button> 
 
     </form>
 
