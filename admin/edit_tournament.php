@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -103,6 +103,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Edit Tournament - SportsHub</title>
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -325,6 +327,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </main>
 
 </div>
+
+<script src="../js/home.js"></script>
 
 </body>
 
