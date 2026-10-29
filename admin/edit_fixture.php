@@ -136,6 +136,8 @@ $tournaments_result = mysqli_query(
     <link rel="stylesheet"
           href="../css/style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -266,6 +268,7 @@ $tournaments_result = mysqli_query(
     </form>
 
 </div>
+<script src="../js/home.js"></script>
 
 </body>
 
