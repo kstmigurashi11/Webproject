@@ -37,7 +37,7 @@ session_start();
             <nav class="nav-links">
                 <a href="index.php" class="active">Sports</a>
                 <a href="#features">Who We Serve</a>
-                <a href="#about">About Us</a>
+                <a href="student/clubs.php">Clubs</a>
                 <a href="#support">Support</a>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
@@ -72,8 +72,8 @@ session_start();
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>SPORTS MADE EASY</h1>
-            <p>Websites, Registration, Youth Sports Management Tools, & More!</p>
+            <h1>PLAY → MANAGE → WIN</h1>
+            <p>Everything you needs to play, compete, and succeed.</p>
             
             <div class="hero-buttons">
                 <?php 
@@ -88,20 +88,39 @@ session_start();
 
     <!-- Trusted Partners Section -->
     <section class="trusted-section">
-        <h3>TRUSTED BY THE BIGGEST NAMES IN SPORTS</h3>
-        <div class="partners-grid">
-            <div class="partner-logo"><i class="fa-solid fa-shield-halved"></i> USA LACROSSE</div>
-            <div class="partner-logo"><i class="fa-solid fa-football"></i> NFL FLAG</div>
-            <div class="partner-logo"><i class="fa-solid fa-baseball"></i> LITTLE LEAGUE</div>
-            <div class="partner-logo"><i class="fa-solid fa-award"></i> US YOUTH SOCCER</div>
-            <div class="partner-logo"><i class="fa-solid fa-basketball"></i> AYSO</div>
+        <h3>SUPPORTING EVERY PART OF THE SPORTING JOURNEY</h3>
+        <div class="trusted-logos">
+            <a href="student/clubs.php" class="sport-link">
+                <i class="fas fa-shield-alt"></i>
+                <span>Clubs</span>
+            </a>
+
+            <a href="student/training.php" class="sport-link">
+                <i class="fas fa-users"></i>
+                <span>SCHEDULE</span>
+            </a>
+
+            <a href="student/book_facility.php" class="sport-link">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Facilities</span>
+            </a>
+
+            <a href="student/tournament_fixtures.php" class="sport-link">
+                <i class="fas fa-trophy"></i>
+                <span>Tournaments</span>
+            </a>
+
+            <a href="student/matches.php" class="sport-link">
+                <i class="fas fa-futbol"></i>
+                <span>Matches</span>
+            </a>
         </div>
     </section>
 
     <!-- Core Features Section -->
     <section id="features" class="features">
-        <h2>Built for Modern Clubs & Leagues</h2>
-        <p class="section-desc">Manage everything from athlete registrations to complex tournament fixtures effortlessly.</p>
+        <h2>Everything Your Team Needs to Succeed</h2>
+        <p class="section-desc">From managing your club to organizing matches and booking facilities, SportsHub brings your sports operations together in one place.</p>
         
         <div class="features-grid">
             <?php 
