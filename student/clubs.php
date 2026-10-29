@@ -35,18 +35,23 @@ $result = $conn->query($sql);
     <!-- Sidebar -->
     <aside class="sidebar">
 
-        <h2>SportsHub</h2>
+        <h1 class="sidebar-logo">
+            <a href="../index.php"><font size="5"><b> SportsHub</b></font></a>
+        </h1>
 
         
             <a href="dashboard.php">Dashboard</a>
-            <a href="clubs.php" class="active">Sports Clubs</a>
-            <a href="my_clubs.php">My Clubs</a>
-            <a href="training.php">Training Schedule</a>
-            <a href="matches.php">Matches</a>
-            <a href="tournament_fixtures.php">Tournaments</a>
-            <a href="book_facility.php">Facilities</a>
-            <a href="participation_history.php">Participation History</a>
-        
+            <ul class="sidebar-links">
+              <li><a href="clubs.php" class="active">Sports Clubs</a></li>
+              <li><a href="my_clubs.php">My Clubs</a></li>
+              <li><a href="training.php">Training Schedule</a></li>
+              <li><a href="matches.php">Matches</a></li>
+              <li><a href="tournament_fixtures.php">Tournaments</a></li>
+              <li><a href="book_facility.php">Facilities</a></li>
+              <li><a href="participation_history.php">Participation History</a></li>
+              <li><a href="match_results.php">Match Results & Scores</a></li>
+            </ul>
+
             <a href="../logout.php" class="logout-btn">Logout</a>
 
     </aside>
@@ -194,7 +199,7 @@ $result = $conn->query($sql);
     </main>
 
 </div>
-<script src="../js/script.js"></script> 
+<script src="../js/script.js"></script>
 
 
 </body>
