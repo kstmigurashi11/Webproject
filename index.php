@@ -81,7 +81,6 @@ session_start();
                     $learn_link = (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) ? 'student/clubs.php' : 'login.php';
                 ?>
                 <a href="<?php echo $demo_link; ?>" class="btn btn-primary btn-lg">SCHEDULE A DEMO</a>
-                <a href="<?php echo $learn_link; ?>" class="btn btn-outline btn-lg">LEARN MORE</a>
             </div>
         </div>
     </section>
