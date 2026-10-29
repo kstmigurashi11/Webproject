@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -78,6 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Student Registration - NSBM SportsHub</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -109,6 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             placeholder="Enter your full name"
             required
         >
+        <br><br>
 
 
         <label>Email</label>
@@ -120,6 +122,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             placeholder="Enter your email"
             required
         >
+        <br><br>
+
 
 
         <label for="password">Password</label>
@@ -177,6 +181,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
         </button>
     </div>
+    <br>
+
 
         <label for="confirm_password">Confirm Password</label>
 
@@ -232,13 +238,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <circle cx="12" cy="12" r="3"/>
             </svg>
         </button>
-    </div>
+    </div><br>
 
         <button type="submit">
             Register
         </button> 
 
-    </form>
+    </form><br>
 
 
     <p>
@@ -249,6 +255,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 <script src="js/script.js"></script>
+<script src="js/home.js"></script>
 
 </body>
 
