@@ -29,13 +29,14 @@ $result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Match Fixtures - SportsHub</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -45,18 +46,23 @@ $result = $conn->query($sql);
     <!-- Sidebar -->
     <aside class="sidebar">
 
-        <h2>SportsHub</h2>
+        <h1 class="sidebar-logo">
+            <a href="../index.php"><font size="5"><b>SportsHub</b></font></a>
+        </h1>
 
         
             <a href="dashboard.php">Dashboard</a>
-            <a href="clubs.php">Sports Clubs</a>
-            <a href="my_clubs.php">My Clubs</a>
-            <a href="training.php">Training Schedule</a>
-            <a href="matches.php" class="active">Matches</a>
-            <a href="tournament_fixtures.php">Tournaments</a>
-            <a href="book_facility.php">Facilities</a>
-            <a href="participation_history.php">Participation History</a>
-        
+            <ul class="sidebar-links">
+              <li><a href="clubs.php">Sports Clubs</a></li>
+              <li><a href="my_clubs.php">My Clubs</a></li>
+              <li><a href="training.php">Training Schedule</a></li>
+              <li><a href="matches.php" class="active">Matches</a></li>
+              <li><a href="tournament_fixtures.php">Tournaments</a></li>
+              <li><a href="book_facility.php">Facilities</a></li>
+              <li><a href="participation_history.php">Participation History</a></li>
+              <li><a href="match_results.php">Match Results & Scores</a></li>
+            </ul>
+           
 
         <a href="../logout.php" class="logout-btn">Logout</a>
 
@@ -171,6 +177,7 @@ $result = $conn->query($sql);
     </main>
 
 </div>
+<script src="../js/home.js"></script>
 
 </body>
 </html>
