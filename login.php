@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -87,7 +87,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <title>Login - NSBM SportsHub</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -119,6 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             placeholder="Enter your email"
             required
         >
+        <br><br>
 
 
         
@@ -178,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </svg>
            </button>
 
-        </div>
+        </div><br>
 
 
         <button type="submit">
@@ -189,6 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        
 
     </form>
+    <br>
 
 
     <p>
@@ -202,6 +205,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 <script src="js/script.js"></script>
+<script src="js/home.js"></script>
 
 </body>
 
