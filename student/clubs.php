@@ -18,13 +18,14 @@ $result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Clubs - SportsHub</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +47,6 @@ $result = $conn->query($sql);
             <a href="book_facility.php">Facilities</a>
             <a href="participation_history.php">Participation History</a>
         
-
             <a href="../logout.php" class="logout-btn">Logout</a>
 
     </aside>
@@ -194,6 +194,8 @@ $result = $conn->query($sql);
     </main>
 
 </div>
+<script src="../js/script.js"></script> 
+
 
 </body>
 </html>
