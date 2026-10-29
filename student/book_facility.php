@@ -113,7 +113,7 @@ $my_bookings = $stmt->get_result();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -125,111 +125,9 @@ $my_bookings = $stmt->get_result();
 
     <link rel="stylesheet"
           href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <style>
-        
-    /* Facility Booking page-specific styles */
-
-    .booking-container {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-    }
-
-    .back-btn {
-        display: inline-block;
-        margin-bottom: 20px;
-        text-decoration: none;
-        color: #2563eb;
-    }
-
-    .form-box {
-        background: white;
-        padding: 25px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
-
-    .form-box h2 {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    .booking-container label {
-        display: block;
-        margin-top: 15px;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    .booking-container input,
-    .booking-container select {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-    }
-
-    .booking-container button {
-        margin-top: 20px;
-        padding: 12px 20px;
-        background-color: #2563eb;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-
-    .booking-container button:hover {
-        background-color: #1d4ed8;
-    }
-
-    .success,
-    .error {
-        padding: 12px;
-        border-radius: 6px;
-        margin-bottom: 15px;
-    }
-
-    .success {
-        background-color: #d4edda;
-        color: #155724;
-    }
-
-    .error {
-        background-color: #f8d7da;
-        color: #721c24;
-    }
-
-    .booking-container .pending {
-        color: #856404;
-        font-weight: bold;
-    }
-
-    .booking-container .approved {
-        color: #155724;
-        font-weight: bold;
-    }
-
-    .booking-container .rejected {
-        color: #721c24;
-        font-weight: bold;
-    }
-
-    .booking-table-wrapper {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .booking-table-wrapper table {
-        min-width: 600px;
-    }
-
-
-
-
-    </style>
+    
 
 </head>
 
@@ -239,16 +137,23 @@ $my_bookings = $stmt->get_result();
 
     <div class="sidebar">
 
-        <h2>SportsHub</h2>
+        <h1 class="sidebar-logo">
+            <a href="../index.php"><font size="5"><b> SportsHub</b></font></a>
+        </h1>
+        
 
         <a href="dashboard.php">Dashboard</a>
-        <a href="clubs.php">Sports Clubs</a>
-        <a href="my_clubs.php">My Clubs</a>
-        <a href="training.php">Training Schedule</a>
-        <a href="matches.php">Matches</a>
-        <a href="tournament_fixtures.php">Tournaments</a>
-        <a href="book_facility.php">Facilities</a>
-        <a href="participation_history.php">Participation History</a>
+        <ul class="sidebar-links">
+          <li><a href="clubs.php">Sports Clubs</a></li>   
+          <li><a href="my_clubs.php">My Clubs</a></li>
+          <li><a href="training.php">Training Schedule</a></li>
+          <li><a href="matches.php">Matches</a></li>
+          <li><a href="tournament_fixtures.php">Tournaments</a></li>
+          <li><a href="book_facility.php" class="active">Facilities</a></li>
+          <li><a href="participation_history.php">Participation History</a></li>
+          <li><a href="match_results.php">Match Results & Scores</a></li>
+        </ul>
+        <br>
 
         <a href="../logout.php" class="logout-btn">Logout</a>
 
@@ -447,6 +352,7 @@ $my_bookings = $stmt->get_result();
 </div>
 
 <script src="../js/script.js"></script>
+<script src="../js/home.js"></script>
 
 </body>
 
