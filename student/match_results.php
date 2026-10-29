@@ -44,7 +44,7 @@ $result = mysqli_query($conn, $sql);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -57,32 +57,69 @@ $result = mysqli_query($conn, $sql);
 
     <link rel="stylesheet"
           href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+<div class="dashboard-layout">
 
-<div class="dashboard-container">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
 
-    <h1>Match Results & Scores</h1>
+        <h1 class="sidebar-logo">
+            <a href="../index.php"><font size="5"><b> SportsHub</b></font></a>
+        </h1>
 
-    <p>
-        View tournament match results and scores.
-    </p>
+        <a href="dashboard.php">Dashboard</a>
+        <ul class="sidebar-links">
+          <li><a href="clubs.php"> Sports Clubs</a></li>
+          <li><a href="my_clubs.php">My Clubs</a></li>
+          <li><a href="training.php"> Training Schedule</a></li>
+          <li><a href="matches.php">  Matches</a></li>
+          <li><a href="tournament_fixtures.php">  Tournaments</a></li>
+          <li><a href="book_facility.php"> Facilities</a></li>
+          <li><a href="participation_history.php">  Participation History</a></li>
+          <li><a href="match_results.php" class="active">  Match Results & Scores</a></li>
+        </ul>
+        <br>
+
+        <a href="../logout.php" class="logout-btn">Logout</a>
+
+    </div>
+
+    
+    <main class="main-content">
+
+    
+
+        <div class="topbar">
+            <div>
+                <h1>Match Results & Scores</h1>
+                <p>
+                   View tournament match results and scores.
+                </p>
+            </div>
+
+            <div>
+                <span>
+                    Welcome, <?php echo htmlspecialchars($_SESSION["full_name"]); ?>
+                </span>
+
+                
+            </div>
+        </div>
+    
+    
+    
+
+    
 
 
-    <a
-        href="dashboard.php"
-        class="btn"
-    >
-        Back to Dashboard
-    </a>
+    
 
 
-    <hr>
-
-
-    <div class="table-container">
+    <div class="content-box">
 
         <table>
 
@@ -278,7 +315,9 @@ $result = mysqli_query($conn, $sql);
     </div>
 
 </div>
+<script src="../js/home.js"></script>
 
 </body>
 
 </html>
+
