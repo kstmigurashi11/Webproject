@@ -129,7 +129,7 @@ $fixtures_result = mysqli_query(
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -139,6 +139,8 @@ $fixtures_result = mysqli_query(
     <title>Tournament Fixtures - SportsHub Admin</title>
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -395,6 +397,8 @@ $fixtures_result = mysqli_query(
 </div>
 
 <script src="../js/script.js"></script>
+
+<script src="../js/home.js"></script>
 
 </body>
 </html>
