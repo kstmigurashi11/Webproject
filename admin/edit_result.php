@@ -187,7 +187,7 @@ if (!$match_result) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -200,6 +200,8 @@ if (!$match_result) {
 
     <link rel="stylesheet"
           href="../css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -322,6 +324,8 @@ if (!$match_result) {
     </form>
 
 </div>
+
+<script src="../js/home.js"></script>
 
 </body>
 
