@@ -132,7 +132,7 @@ $matches_result = $conn->query($matches_sql);
 
     <title>Matches - SportsHub</title>
 
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
