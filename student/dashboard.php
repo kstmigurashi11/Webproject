@@ -94,7 +94,6 @@ $my_participation = $result->fetch_assoc()["total"];
 
 ?>
 
-<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 
 <head>

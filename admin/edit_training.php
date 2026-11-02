@@ -140,7 +140,7 @@ $clubs_result = $conn->query($clubs_sql);
 
 ?>
 
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
