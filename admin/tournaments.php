@@ -190,7 +190,14 @@ $result = $conn->query($sql);
 
 </div>
     <!-- MAIN CONTENT -->
-    <main class="main-content">
+    <div class="main-content student-background"
+        style="
+           background-image: url('/sportshub/images/new.jpg.') !important;
+           background-size: cover !important;
+           background-position: center !important;
+           background-repeat: no-repeat !important;
+           min-height: 100vh;
+        ">
 
         <!-- TOPBAR -->
         <div class="topbar">
