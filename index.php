@@ -22,11 +22,6 @@ session_start();
 </head>
 <body>
 
-    <!-- Top Announcement Bar -->
-    <div class="top-bar">
-        <p>SportsHub & PlayMetrics: A new era for youth sports! <a href="register.php">Read more →</a></p>
-    </div>
-
     <!-- Header / Navigation Bar -->
     <header class="navbar">
         <div class="navbar-container">
@@ -38,7 +33,6 @@ session_start();
                 <a href="index.php" class="active">Sports</a>
                 <a href="#features">Who We Serve</a>
                 <a href="student/clubs.php">Clubs</a>
-                <a href="#support">Support</a>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
                         <a href="admin/dashboard.php">Admin Panel</a>
@@ -80,7 +74,7 @@ session_start();
                     $demo_link = (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) ? 'student/book_facility.php' : 'register.php';
                     $learn_link = (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) ? 'student/clubs.php' : 'login.php';
                 ?>
-                <a href="<?php echo $demo_link; ?>" class="btn btn-primary btn-lg">SCHEDULE A DEMO</a>
+                <a href="<?php echo $demo_link; ?>" class="btn btn-primary btn-lg">GET STARTED</a>
             </div>
         </div>
     </section>
