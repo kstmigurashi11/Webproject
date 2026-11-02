@@ -119,8 +119,8 @@ $training_result = $conn->query($training_sql);
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -133,6 +133,10 @@ $training_result = $conn->query($training_sql);
 
     <link rel="stylesheet" href="../css/style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 
@@ -141,74 +145,120 @@ $training_result = $conn->query($training_sql);
 <div class="dashboard-layout">
 
 
-    <!-- =========================
-         SIDEBAR
-    ========================== -->
+   <!-- SIDEBAR -->
 
-    <aside class="sidebar">
+<div class="sidebar">
 
-        <h2>SportsHub</h2>
+    <h2><a href="index.php"><font size="6"><b>
+        SportsHub</b></font></a>
+    </h2>
 
-        
+    
+    <div class="sidebar-menu">
+    <a href="dashboard.php" class="active">
+        <span class="menu-icon">
+            <i data-lucide="gauge"></i>
+        </span>
+        <span>Dashboard</span>
+    </a>
 
-            
-                <a href="dashboard.php">
-                    Dashboard
-                </a>
-            
-                <a href="clubs.php">
-                    Sports Clubs
-                </a>
-           
-                <a href="members.php">
-                    Members
-                </a>
-            
-                <a href="training.php" class="active">
-                    Training
-                </a>
-           
-                <a href="matches.php">
-                    Matches
-                </a>
-            
-                <a href="tournaments.php">
-                    Tournaments
-                </a>
-            
-                <a href="fixtures.php">
-                    Fixtures
-                </a>
-            
-                <a href="match_results.php">
-                    Results
-                </a>
-            
-                <a href="facilities.php">
-                    Facilities
-                </a>
-            
-                <a href="bookings.php">
-                    Bookings
-                </a>
-            
-                <a href="reports.php">
-                    Reports
-                </a>
-            
+    <a href="clubs.php">
+        <span class="menu-icon">
+            <i data-lucide="medal"></i>
+        </span>
+        <span>Sports Clubs</span>
+    </a>
 
-        <a href="../logout.php" class="logout-btn">
-            Logout
-        </a>
+    <a href="members.php">
+        <span class="menu-icon">
+            <i data-lucide="users"></i>
+        </span>
+        <span>Members</span>
+    </a>
 
-    </aside>
+    <a href="training.php">
+        <span class="menu-icon">
+            <i data-lucide="dumbbell"></i>
+        </span>
+        <span>Training Sessions</span>
+    </a>
+
+    <a href="matches.php">
+        <span class="menu-icon">
+            <i data-lucide="volleyball"></i>
+        </span>
+        <span>Matches</span>
+    </a>
+
+    <a href="tournaments.php">
+        <span class="menu-icon">
+            <i data-lucide="trophy"></i>
+        </span>
+        <span>Tournaments</span>
+    </a>
+
+    <a href="fixtures.php">
+        <span class="menu-icon">
+            <i data-lucide="calendar-days"></i>
+        </span>
+        <span>Fixtures</span>
+    </a>
+
+    <a href="match_results.php">
+        <span class="menu-icon">
+            <i data-lucide="award"></i>
+        </span>
+        <span>Match Results</span>
+    </a>
+
+    <a href="facilities.php">
+        <span class="menu-icon">
+            <i data-lucide="building-2"></i>
+        </span>
+        <span>Facilities</span>
+    </a>
+
+    <a href="bookings.php">
+        <span class="menu-icon">
+            <i data-lucide="clipboard-list"></i>
+        </span>
+        <span>Bookings</span>
+    </a>
+
+    <a href="participation.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-pie"></i>
+        </span>
+        <span>Participation Management</span>
+    </a>
+
+    <a href="reports.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-no-axes-combined"></i>
+        </span>
+        <span>Reports & Statistics</span>
+    </a>
+</div>
+    
+    
+    <a href="../logout.php" class="logout-btn">Logout</a>
+
+
+</div>
 
 
     <!-- =========================
          MAIN CONTENT
     ========================== -->
 
-    <main class="main-content">
+    <div class="main-content student-background"
+        style="
+           background-image: url('/sportshub/images/new.jpg.') !important;
+           background-size: cover !important;
+           background-position: center !important;
+           background-repeat: no-repeat !important;
+           min-height: 100vh;
+        ">
 
 
         <!-- TOPBAR -->
@@ -538,6 +588,11 @@ $training_result = $conn->query($training_sql);
 </div>
 
 <script src="../js/script.js"></script>
+
+<script src="../js/home.js"></script>
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 
