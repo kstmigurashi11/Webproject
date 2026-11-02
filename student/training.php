@@ -39,8 +39,8 @@ $result = $conn->query($sql);
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -52,6 +52,9 @@ $result = $conn->query($sql);
     <title>Training Schedule - SportsHub</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -65,76 +68,94 @@ $result = $conn->query($sql);
          SIDEBAR
     ========================== -->
 
-    <aside class="sidebar">
+   <div class="sidebar">
 
-        <h2>SportsHub</h2>
+    <h2><a href="index.php"><font size="6"><b>
+        SportsHub</b></font></a>
+    </h2>
+
+    <a href="dashboard.php">
+        <span class="menu-icon">
+            <i data-lucide="gauge"></i>
+        </span>
+        <span>Dashboard</span>
+    </a>
+
+    <a href="clubs.php" class="active">
+        <span class="menu-icon">
+            <i data-lucide="medal"></i>
+        </span>
+        <span>Sports Clubs</span>
+    </a>
+
+    <a href="my_clubs.php">
+        <span class="menu-icon">
+            <i data-lucide="users"></i>
+        </span>
+        <span>My Clubs</span>
+    </a>
+
+    <a href="training.php">
+        <span class="menu-icon">
+            <i data-lucide="dumbbell"></i>
+        </span>
+        <span>Training Schedule</span>
+    </a>
+
+    <a href="matches.php">
+        <span class="menu-icon">
+            <i data-lucide="volleyball"></i>
+        </span>
+        <span>Matches</span>
+    </a>
+
+    <a href="tournament_fixtures.php">
+        <span class="menu-icon">
+            <i data-lucide="trophy"></i>
+        </span>
+        <span>Tournaments</span>
+    </a>
+
+    <a href="book_facility.php">
+        <span class="menu-icon">
+            <i data-lucide="calendar-days"></i>
+        </span>
+        <span>Facility Bookings</span>
+    </a>
+
+    <a href="participation_history.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-no-axes-combined"></i>
+        </span>
+        <span>Participation History</span>
+    </a>
+
+    <a href="match_results.php">
+        <span class="menu-icon">
+            <i data-lucide="award"></i>
+        </span>
+        <span>Match Results & Scores</span>
+    </a>
 
         
-
-            
-                <a href="dashboard.php">
-                    Dashboard
-                </a>
-            
-
-            
-                <a href="clubs.php">
-                    Sports Clubs
-                </a>
-            
-
-            
-                <a href="my_clubs.php">
-                    My Clubs
-                </a>
-            
-
-            
-                <a href="training.php" class="active">
-                    Training Schedule
-                </a>
-            
-
-            
-                <a href="matches.php">
-                    Matches
-                </a>
-            
-
-            
-                <a href="tournament_fixtures.php">
-                    Tournaments
-                </a>
-            
-
            
-                <a href="book_facility.php">
-                    Facilities
-                </a>
-           
-
-            
-            
-                <a href="participation_history.php">
-                    Participation History
-                </a>
-            
-
         
+    <a href="../logout.php" class="logout-btn">Logout</a>
 
-
-        <a href="../logout.php" class="logout-btn">
-            Logout
-        </a>
-
-    </aside>
-
+    </div>
 
     <!-- =========================
          MAIN CONTENT
     ========================== -->
 
-    <main class="main-content">
+    <main class="main-content student-background"
+        style="
+           background-image: url('/sportshub/images/new.jpg.') !important;
+           background-size: cover !important;
+           background-position: center !important;
+           background-repeat: no-repeat !important;
+           min-height: 100vh;
+        ">
 
 
         <!-- TOPBAR -->
@@ -286,6 +307,11 @@ $result = $conn->query($sql);
     </main>
 
 </div>
+<script src="../js/home.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
 
 </body>
 
