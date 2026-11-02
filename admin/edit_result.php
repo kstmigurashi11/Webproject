@@ -186,7 +186,6 @@ if (!$match_result) {
 
 ?>
 
-<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 
 <head>

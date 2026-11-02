@@ -2,7 +2,6 @@
 // sportshub/index.php
 session_start();
 ?>
-<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">

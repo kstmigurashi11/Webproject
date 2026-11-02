@@ -121,7 +121,6 @@ $tournaments_result = mysqli_query(
 
 ?>
 
-<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 
 <head>
