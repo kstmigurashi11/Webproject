@@ -152,18 +152,18 @@ session_start();
                 <div class="logo">
                     <i class="fa-solid fa-futbol"></i> <span class="logo-text">SPORTS<strong>HUB</strong></span>
                 </div>
-                <p>The ultimate software platform for sports administration, clubs, and facility operations.</p>
+                <p>SportsHub is an all-in-one sports management platform that makes it easier to manage clubs, memberships, training schedules, tournaments, match results, and facility bookings. It connects students, coaches, and administrators through one convenient system, helping sports organizations stay organized and manage their activities more efficiently.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
-                <a href="index.php">Home</a>
-                <a href="#features">Platform</a>
+                <a href="https://www.nsbm.ac.lk/ " target="_blank">University Website</a>
+                <a href="https://students.nsbm.ac.lk/ " target="_blank">Students Portal</a>
                 <a href="login.php">Login</a>
             </div>
             <div class="footer-col">
-                <h4>Portals</h4>
-                <a href="register.php">Register Account</a>
-                <a href="login.php">Admin Sign In</a>
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/nsbm.lk" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fnsbmgreenuniversity%2F&is_from_rle" target="_blank">Instagram</a>
             </div>
         </div>
         <div class="footer-bottom">
