@@ -201,7 +201,15 @@ $upcoming_matches = (int)$result->fetch_assoc()['total'];
 
     <!-- MAIN CONTENT -->
 
-    <div class="main-content">
+    <div class="main-content student-background"
+        style="
+           background-image: url('/sportshub/images/new.jpg.') !important;
+           background-size: cover !important;
+           background-position: center !important;
+           background-repeat: no-repeat !important;
+           min-height: 100vh;
+        ">
+
 
 
         <!-- TOP BAR -->
@@ -281,21 +289,6 @@ $upcoming_matches = (int)$result->fetch_assoc()['total'];
         </div>
 
 
-        <!-- CONTENT -->
-
-        <div class="content-box">
-
-            <h2>Welcome to NSBM SportsHub</h2>
-
-            <br>
-
-            <p>
-                Use the sidebar to manage sports clubs,
-                memberships, training sessions, matches,
-                tournaments, facilities and reports.
-            </p>
-
-        </div>
 
 
     </div>
