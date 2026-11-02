@@ -154,8 +154,8 @@ $participation_types = $conn->query("
 ");
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -165,129 +165,12 @@ $participation_types = $conn->query("
 
     <title>Reports & Statistics</title>
 
-    <style>
+    <link rel="stylesheet" href="../css/style.css">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-        body {
-            background: #f4f6f8;
-            padding: 30px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-            color: #222;
-        }
-
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .card h3 {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .number {
-            font-size: 32px;
-            font-weight: bold;
-            color: #222;
-        }
-
-        .section {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .section h2 {
-            margin-bottom: 20px;
-        }
-
-        .booking-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .booking-card {
-            padding: 20px;
-            border-radius: 8px;
-            background: #f4f6f8;
-            text-align: center;
-        }
-
-        .booking-card h3 {
-            margin-bottom: 10px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background: #f4f6f8;
-        }
-
-        .back {
-            display: inline-block;
-            margin-bottom: 25px;
-            text-decoration: none;
-            color: white;
-            background: #333;
-            padding: 10px 16px;
-            border-radius: 6px;
-        }
-
-        @media (max-width: 800px) {
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-            .booking-grid {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-    </style>
 
 </head>
 
@@ -621,6 +504,11 @@ $participation_types = $conn->query("
 </script>
 
 <script src="../js/script.js"></script>
+
+<script src="../js/home.js"></script>
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 
