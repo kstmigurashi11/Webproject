@@ -45,8 +45,7 @@ $result = $stmt->get_result();
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
 
@@ -57,60 +56,10 @@ $result = $stmt->get_result();
 
     <title>Participation History</title>
 
-    <link rel="stylesheet"
-          href="../css/style.css">
-
-    <style>
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 30px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .back-btn {
-            display: inline-block;
-            margin-bottom: 20px;
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        h1 {
-            margin-bottom: 25px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        th,
-        td {
-            padding: 12px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .empty {
-            text-align: center;
-            padding: 25px;
-            background-color: white;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -120,31 +69,94 @@ $result = $stmt->get_result();
 
     <div class="sidebar">
 
-        <h2>SportsHub</h2>
+    <h2><a href="index.php"><font size="6"><b>
+        SportsHub</b></font></a>
+    </h2>
 
-        <a href="dashboard.php">Dashboard</a>
-        <a href="clubs.php">Sports Clubs</a>
-        <a href="my_clubs.php">My Clubs</a>
-        <a href="training.php">Training Schedule</a>
-        <a href="matches.php">Matches</a>
-        <a href="tournament_fixtures.php">Tournaments</a>
-        <a href="book_facility.php">Facilities</a>
-        <a href="participation_history.php">Participation History</a>
+    <a href="dashboard.php">
+        <span class="menu-icon">
+            <i data-lucide="gauge"></i>
+        </span>
+        <span>Dashboard</span>
+    </a>
 
-        <a href="../logout.php" class="logout-btn">Logout</a>
+    <a href="clubs.php" class="active">
+        <span class="menu-icon">
+            <i data-lucide="medal"></i>
+        </span>
+        <span>Sports Clubs</span>
+    </a>
+
+    <a href="my_clubs.php">
+        <span class="menu-icon">
+            <i data-lucide="users"></i>
+        </span>
+        <span>My Clubs</span>
+    </a>
+
+    <a href="training.php">
+        <span class="menu-icon">
+            <i data-lucide="dumbbell"></i>
+        </span>
+        <span>Training Schedule</span>
+    </a>
+
+    <a href="matches.php">
+        <span class="menu-icon">
+            <i data-lucide="volleyball"></i>
+        </span>
+        <span>Matches</span>
+    </a>
+
+    <a href="tournament_fixtures.php">
+        <span class="menu-icon">
+            <i data-lucide="trophy"></i>
+        </span>
+        <span>Tournaments</span>
+    </a>
+
+    <a href="book_facility.php">
+        <span class="menu-icon">
+            <i data-lucide="calendar-days"></i>
+        </span>
+        <span>Facility Bookings</span>
+    </a>
+
+    <a href="participation_history.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-no-axes-combined"></i>
+        </span>
+        <span>Participation History</span>
+    </a>
+
+    <a href="match_results.php">
+        <span class="menu-icon">
+            <i data-lucide="award"></i>
+        </span>
+        <span>Match Results & Scores</span>
+    </a>
+
+        
+           
+        
+    <a href="../logout.php" class="logout-btn">Logout</a>
 
     </div>
 
-     <div class="main-content">
+    <main class="main-content student-background"
+        style="
+           background-image: url('/sportshub/images/new.jpg.') !important;
+           background-size: cover !important;
+           background-position: center !important;
+           background-repeat: no-repeat !important;
+           min-height: 100vh;
+        ">
 
         <div class="content-box">
 
     <div class="container">
 
-    <a href="dashboard.php" class="back-btn">
-        ← Back to Dashboard
-    </a>
-
+   
     <h1>My Participation History</h1>
 
 
@@ -305,6 +317,10 @@ $result = $stmt->get_result();
 </div>
 
 <script src="../js/script.js"></script>
+<script src="../js/home.js"></script>
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 
