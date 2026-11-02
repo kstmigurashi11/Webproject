@@ -229,61 +229,48 @@ $upcoming_matches = (int)$result->fetch_assoc()['total'];
 
                 &nbsp;
 
-                <a href="../logout.php"
-                   class="logout-btn">
-                    Logout
-                </a>
+                
 
             </div>
 
         </div>
 
 
-        <!-- DASHBOARD CARDS -->
+      <!-- DASHBOARD CARDS -->
 
-        <div class="dashboard-cards">
+        <div class="dashboard-cards admin-stats">
+        
+        <!-- Total students -->
 
             <div class="card">
-
-                <h3>Total Students</h3>
-
-                <div class="number">
-                     <?php echo $total_students; ?>
+                <div class="stat-inner">
+                    <h3>Total Students</h3>
+                    <h2><?php echo $total_students; ?></h2>
                 </div>
-
             </div>
 
 
             <div class="card">
-
-                <h3>Sports Clubs</h3>
-
-                <div class="number">
-                    <?php echo $total_clubs; ?>
+                <div class="stat-inner">
+                    <h3>Sports Clubs</h3>
+                    <h2><?php echo $total_clubs; ?></h2>
                 </div>
-
             </div>
 
 
             <div class="card">
-
-                <h3>Pending Requests</h3>
-
-                <div class="number">
-                    <?php echo $pending_requests; ?> 
+                <div class="stat-inner">
+                    <h3>Pending Requests</h3>
+                    <h2><?php echo $pending_requests; ?></h2>
                 </div>
-
             </div>
 
 
             <div class="card">
-
-                <h3>Upcoming Matches</h3>
-
-                <div class="number">
-                    <?php echo $upcoming_matches; ?>
+                <div class="stat-inner">
+                    <h3>Upcoming Matches</h3>
+                    <h2><?php echo $upcoming_matches; ?></h2>
                 </div>
-
             </div>
 
         </div>
