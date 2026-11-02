@@ -127,7 +127,6 @@ if (isset($_POST["update_club"])) {
 ?>
 
 
-<!DOCTYPE html>
 
 <html lang="en">
 
