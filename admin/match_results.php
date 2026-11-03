@@ -521,7 +521,7 @@ $results_result = mysqli_query(
                     <button
                         type="submit"
                         name="add_result"
-                        class="btn btn-primary"
+                        class="add-mresult-btn"
                     >
                         Add Result
                     </button>

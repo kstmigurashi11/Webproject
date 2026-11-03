@@ -1016,5 +1016,11 @@ body.dark-mode .sidebar a.active .menu-icon,
 
 .add-facility-btn {
     position: relative;
-    top: 15px;
+    top: 32px;
+}
+
+
+.add-mresult-btn {
+    position: relative;
+    top: 82px;
 }
