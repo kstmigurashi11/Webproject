@@ -137,7 +137,7 @@ $my_bookings = $stmt->get_result();
 
 
     <!-- Sidebar -->
-    <div class="sidebar">
+<div class="sidebar">
 
     <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>   
@@ -211,7 +211,7 @@ $my_bookings = $stmt->get_result();
         
     <a href="../logout.php" class="logout-btn">Logout</a>
 
-    </div>
+</div>
 
      <main class="main-content student-background
         style="
