@@ -1009,3 +1009,12 @@ body.dark-mode .sidebar a.active .menu-icon,
 [data-theme="light"] .admin-stats .stat-inner h2 {
     color: #059669;
 }
+
+
+
+/* Move Add Facility button slightly down */
+
+.add-facility-btn {
+    position: relative;
+    top: 15px;
+}

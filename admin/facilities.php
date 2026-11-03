@@ -296,7 +296,7 @@ $result = $conn->query($sql);
                     <button
                         type="submit"
                         name="add_facility"
-                        class="btn btn-primary"
+                        class="add-facility-btn"
                     >
                         Add Facility
                     </button>
