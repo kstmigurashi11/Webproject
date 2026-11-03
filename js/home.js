@@ -1,46 +1,62 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("menuToggle");
-    const nav = document.getElementById("navLinks");
 
-    if (!toggle || !nav) {
-        return;
+    // =================================
+    // DARK / LIGHT MODE
+    // =================================
+
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const htmlElement = document.documentElement;
+
+    // Load saved theme
+    let savedTheme = localStorage.getItem("sportshub_theme") || "dark";
+
+    htmlElement.setAttribute("data-theme", savedTheme);
+
+    function updateThemeIcon(theme) {
+        if (!themeToggleBtn) return;
+
+        if (theme === "dark") {
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        } else {
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        }
     }
 
-    function closeMenu() {
-        nav.classList.remove("show");
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.setAttribute("aria-label", "Open navigation");
-        toggle.textContent = "☰";
-    }
+    updateThemeIcon(savedTheme);
 
-    toggle.addEventListener("click", function () {
-        const isOpen = nav.classList.toggle("show");
+    // Theme button click
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", function () {
 
-        toggle.setAttribute("aria-expanded", String(isOpen));
-        toggle.setAttribute(
-            "aria-label",
-            isOpen ? "Close navigation" : "Open navigation"
-        );
-        toggle.textContent = isOpen ? "✕" : "☰";
-    });
+            const currentTheme =
+                htmlElement.getAttribute("data-theme");
 
-    nav.querySelectorAll("a").forEach(function (link) {
-        link.addEventListener("click", function () {
-            closeMenu();
+            const newTheme =
+                currentTheme === "dark" ? "light" : "dark";
+
+            htmlElement.setAttribute("data-theme", newTheme);
+
+            localStorage.setItem("sportshub_theme", newTheme);
+
+            updateThemeIcon(newTheme);
+
         });
-    });
+    }
 
-    document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") {
-            closeMenu();
-            toggle.focus();
-        }
-    });
+    // =================================
+    // MOBILE MENU
+    // =================================
 
-    window.addEventListener("resize", function () {
-        if (window.innerWidth > 700) {
-            closeMenu();
-        }
-    });
+    const menuToggle = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (menuToggle && navLinks) {
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+        });
+
+    }
+
 });
