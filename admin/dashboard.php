@@ -283,6 +283,8 @@ $upcoming_matches = (int)$result->fetch_assoc()['total'];
 </div>
 
 <script src="../js/home.js"></script>
+<script src="../js/script.js"></script>
+
 <script>
     lucide.createIcons();
 </script>
