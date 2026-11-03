@@ -987,3 +987,25 @@ body.dark-mode .sidebar a.active .menu-icon,
     background: #dff5ee !important;
     color: #009b70 !important;
 }
+
+
+/* ADMIN DASHBOARD - LIGHT MODE CARDS */
+
+[data-theme="light"] .admin-stats .card {
+    background: #ffffff !important;
+    border: 1px solid #cceee2;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+[data-theme="light"] .admin-stats .stat-inner {
+    background: #f0fdf4;
+    border: 1px solid #b8e8d5;
+}
+
+[data-theme="light"] .admin-stats .stat-inner h3 {
+    color: #047857;
+}
+
+[data-theme="light"] .admin-stats .stat-inner h2 {
+    color: #059669;
+}

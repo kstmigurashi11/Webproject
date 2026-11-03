@@ -69,11 +69,26 @@ session_start();
             <p>Everything you needs to play, compete, and succeed.</p>
             
             <div class="hero-buttons">
-                <?php 
-                    $demo_link = (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) ? 'student/book_facility.php' : 'register.php';
-                    $learn_link = (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) ? 'student/clubs.php' : 'login.php';
+               
+                <?php
+                if (isset($_SESSION['user_id'])) {
+
+                    if ($_SESSION['role'] === 'admin') {
+                        $get_started_link = 'admin/dashboard.php';
+                    } else {
+                        $get_started_link = 'student/dashboard.php';
+                    }
+
+                } else {
+                    $get_started_link = 'register.php';
+                }
                 ?>
-                <a href="<?php echo $demo_link; ?>" class="btn btn-primary btn-lg">GET STARTED</a>
+
+                <a href="<?php echo $get_started_link; ?>"
+                class="btn btn-primary btn-lg">
+                    GET STARTED
+                </a>
+
             </div>
         </div>
     </section>
