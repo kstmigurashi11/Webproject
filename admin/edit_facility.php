@@ -178,6 +178,7 @@ if (isset($_POST['update_facility'])) {
 </div>
 
 <script src="../js/home.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 

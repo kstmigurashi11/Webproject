@@ -634,7 +634,7 @@ body.dark-mode .sidebar a.active {
 
 /* Keep individual icon backgrounds visible */
 body.dark-mode .sidebar .menu-icon {
-    filter: brightness(0.8);
+    filter: brightness(1);
 }
 
 /* STUDENT DASHBOARD BACKGROUND IMAGE */
@@ -980,4 +980,10 @@ body.dark-mode .sidebar .menu-icon i {
     .admin-stats {
         grid-template-columns: 1fr;
     }
+}
+
+body.dark-mode .sidebar a.active .menu-icon,
+:root:not([data-theme="light"]) .sidebar a.active .menu-icon {
+    background: #dff5ee !important;
+    color: #009b70 !important;
 }

@@ -325,6 +325,7 @@ if (!$match_result) {
 </div>
 
 <script src="../js/home.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 

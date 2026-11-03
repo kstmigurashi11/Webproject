@@ -521,6 +521,7 @@ $clubs_result = $conn->query($clubs_sql);
 </div>
 
 <script src="../js/home.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 

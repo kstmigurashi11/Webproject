@@ -308,6 +308,7 @@ $result = $conn->query($sql);
 
 </div>
 <script src="../js/home.js"></script>
+<script src="../js/script.js"></script>
 <script>
     lucide.createIcons();
 </script>

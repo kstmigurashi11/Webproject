@@ -1,3 +1,8 @@
+// Apply the saved theme to every page
+(function () {
+    const savedTheme = localStorage.getItem("sportshub_theme") || "dark";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+})();
 // ========================================
 // SportsHub - Common JavaScript
 // ========================================
