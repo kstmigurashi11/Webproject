@@ -141,7 +141,7 @@ $my_bookings = $stmt->get_result();
 
     <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>   
-    <h2> 
+    </h2> 
 
     
 
