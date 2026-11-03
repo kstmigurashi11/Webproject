@@ -63,7 +63,7 @@ $result = mysqli_query($conn, $sql);
     <!-- SIDEBAR -->
    <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
@@ -74,7 +74,7 @@ $result = mysqli_query($conn, $sql);
         <span>Dashboard</span>
     </a>
 
-    <a href="clubs.php" class="active">
+    <a href="clubs.php" >
         <span class="menu-icon">
             <i data-lucide="medal"></i>
         </span>
@@ -102,7 +102,7 @@ $result = mysqli_query($conn, $sql);
         <span>Matches</span>
     </a>
 
-    <a href="tournament_fixtures.php">
+    <a href="tournament_fixtures.php" class="active">
         <span class="menu-icon">
             <i data-lucide="trophy"></i>
         </span>

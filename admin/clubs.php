@@ -93,7 +93,7 @@ $result = $conn->query(
     <link rel="stylesheet"
           href="../css/style.css">
 
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -109,20 +109,20 @@ $result = $conn->query(
 
 <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
     
     <div class="sidebar-menu">
-    <a href="dashboard.php" class="active">
+    <a href="dashboard.php" >
         <span class="menu-icon">
             <i data-lucide="gauge"></i>
         </span>
         <span>Dashboard</span>
     </a>
 
-    <a href="clubs.php">
+    <a href="clubs.php" class="active">
         <span class="menu-icon">
             <i data-lucide="medal"></i>
         </span>

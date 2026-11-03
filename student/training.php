@@ -70,7 +70,7 @@ $result = $conn->query($sql);
 
    <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
@@ -81,7 +81,7 @@ $result = $conn->query($sql);
         <span>Dashboard</span>
     </a>
 
-    <a href="clubs.php" class="active">
+    <a href="clubs.php" >
         <span class="menu-icon">
             <i data-lucide="medal"></i>
         </span>
@@ -95,7 +95,7 @@ $result = $conn->query($sql);
         <span>My Clubs</span>
     </a>
 
-    <a href="training.php">
+    <a href="training.php" class="active">
         <span class="menu-icon">
             <i data-lucide="dumbbell"></i>
         </span>

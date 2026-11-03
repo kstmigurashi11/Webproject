@@ -153,13 +153,13 @@ $fixtures_result = mysqli_query(
 
 <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
     
     <div class="sidebar-menu">
-    <a href="dashboard.php" class="active">
+    <a href="dashboard.php" >
         <span class="menu-icon">
             <i data-lucide="gauge"></i>
         </span>
@@ -201,7 +201,7 @@ $fixtures_result = mysqli_query(
         <span>Tournaments</span>
     </a>
 
-    <a href="fixtures.php">
+    <a href="fixtures.php" class="active">
         <span class="menu-icon">
             <i data-lucide="calendar-days"></i>
         </span>

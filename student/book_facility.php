@@ -139,7 +139,7 @@ $my_bookings = $stmt->get_result();
     <!-- Sidebar -->
     <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>   
     <h2> 
 
@@ -152,7 +152,7 @@ $my_bookings = $stmt->get_result();
         <span>Dashboard</span>
     </a>
 
-    <a href="clubs.php" class="active">
+    <a href="clubs.php" >
         <span class="menu-icon">
             <i data-lucide="medal"></i>
         </span>
@@ -187,7 +187,7 @@ $my_bookings = $stmt->get_result();
         <span>Tournaments</span>
     </a>
 
-    <a href="book_facility.php">
+    <a href="book_facility.php" class="active">
         <span class="menu-icon">
             <i data-lucide="calendar-days"></i>
         </span>

@@ -150,13 +150,13 @@ $matches_result = $conn->query($matches_sql);
     ========================================= -->
 <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
     
     <div class="sidebar-menu">
-    <a href="dashboard.php" class="active">
+    <a href="dashboard.php" >
         <span class="menu-icon">
             <i data-lucide="gauge"></i>
         </span>
@@ -184,7 +184,7 @@ $matches_result = $conn->query($matches_sql);
         <span>Training Sessions</span>
     </a>
 
-    <a href="matches.php">
+    <a href="matches.php" class="active">
         <span class="menu-icon">
             <i data-lucide="volleyball"></i>
         </span>

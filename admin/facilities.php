@@ -82,13 +82,13 @@ $result = $conn->query($sql);
     <!-- ADMIN SIDEBAR -->
 <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
     
     <div class="sidebar-menu">
-    <a href="dashboard.php" class="active">
+    <a href="dashboard.php" >
         <span class="menu-icon">
             <i data-lucide="gauge"></i>
         </span>
@@ -144,7 +144,7 @@ $result = $conn->query($sql);
         <span>Match Results</span>
     </a>
 
-    <a href="facilities.php">
+    <a href="facilities.php" class="active">
         <span class="menu-icon">
             <i data-lucide="building-2"></i>
         </span>

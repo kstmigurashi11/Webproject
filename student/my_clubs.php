@@ -67,7 +67,7 @@ $result = $stmt->get_result();
 
    <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
@@ -78,14 +78,14 @@ $result = $stmt->get_result();
         <span>Dashboard</span>
     </a>
 
-    <a href="clubs.php" class="active">
+    <a href="clubs.php">
         <span class="menu-icon">
             <i data-lucide="medal"></i>
         </span>
         <span>Sports Clubs</span>
     </a>
 
-    <a href="my_clubs.php">
+    <a href="my_clubs.php" class="active">
         <span class="menu-icon">
             <i data-lucide="users"></i>
         </span>

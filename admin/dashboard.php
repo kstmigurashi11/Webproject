@@ -101,7 +101,7 @@ $upcoming_matches = (int)$result->fetch_assoc()['total'];
 
 <div class="sidebar">
 
-    <h2><a href="index.php"><font size="6"><b>
+    <h2><a href="../index.php"><font size="6"><b>
         SportsHub</b></font></a>
     </h2>
 
