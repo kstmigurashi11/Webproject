@@ -154,57 +154,104 @@ if (isset($_POST["update_club"])) {
 <div class="dashboard-layout">
 
 
-    <!-- SIDEBAR -->
-
     <div class="sidebar">
 
-        <h2>🏆 SportsHub</h2>
+    <h2><a href="../index.php"><font size="6"><b>
+        SportsHub</b></font></a>
+    </h2>
 
-        <a href="dashboard.php">
-            Dashboard
-        </a>
+    
+    <div class="sidebar-menu">
+    <a href="dashboard.php" >
+        <span class="menu-icon">
+            <i data-lucide="gauge"></i>
+        </span>
+        <span>Dashboard</span>
+    </a>
 
-        <a href="clubs.php">
-            🏅 Sports Clubs
-        </a>
+    <a href="clubs.php" class="active">
+        <span class="menu-icon">
+            <i data-lucide="medal"></i>
+        </span>
+        <span>Sports Clubs</span>
+    </a>
 
-        <a href="#">
-            👥 Members
-        </a>
+    <a href="members.php">
+        <span class="menu-icon">
+            <i data-lucide="users"></i>
+        </span>
+        <span>Members</span>
+    </a>
 
-        <a href="#">
-            🏋 Training
-        </a>
+    <a href="training.php">
+        <span class="menu-icon">
+            <i data-lucide="dumbbell"></i>
+        </span>
+        <span>Training Sessions</span>
+    </a>
 
-        <a href="#">
-            ⚽ Matches
-        </a>
+    <a href="matches.php">
+        <span class="menu-icon">
+            <i data-lucide="volleyball"></i>
+        </span>
+        <span>Matches</span>
+    </a>
 
-        <a href="#">
-            🏆 Tournaments
-        </a>
+    <a href="tournaments.php">
+        <span class="menu-icon">
+            <i data-lucide="trophy"></i>
+        </span>
+        <span>Tournaments</span>
+    </a>
 
-        <a href="#">
-            📅 Fixtures
-        </a>
+    <a href="fixtures.php">
+        <span class="menu-icon">
+            <i data-lucide="calendar-days"></i>
+        </span>
+        <span>Fixtures</span>
+    </a>
 
-        <a href="#">
-            🥇 Results
-        </a>
+    <a href="match_results.php">
+        <span class="menu-icon">
+            <i data-lucide="award"></i>
+        </span>
+        <span>Match Results</span>
+    </a>
 
-        <a href="#">
-            🏟 Facilities
-        </a>
+    <a href="facilities.php">
+        <span class="menu-icon">
+            <i data-lucide="building-2"></i>
+        </span>
+        <span>Facilities</span>
+    </a>
 
-        <a href="#">
-            📋 Bookings
-        </a>
+    <a href="bookings.php">
+        <span class="menu-icon">
+            <i data-lucide="clipboard-list"></i>
+        </span>
+        <span>Bookings</span>
+    </a>
 
-        <a href="#">
-            📊 Reports
-        </a>
+    <a href="participation.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-pie"></i>
+        </span>
+        <span>Participation Management</span>
+    </a>
 
-    </div>
+    <a href="reports.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-no-axes-combined"></i>
+        </span>
+        <span>Reports & Statistics</span>
+    </a>
+</div>
+    
+    
+    <a href="../logout.php" class="logout-btn">Logout</a>
+
+
+</div>
 
 
     <!-- MAIN CONTENT -->
