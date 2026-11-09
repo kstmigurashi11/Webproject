@@ -164,86 +164,104 @@ $clubs_result = $conn->query($clubs_sql);
 
     <!-- SIDEBAR -->
 
-    <aside class="sidebar">
+    <div class="sidebar">
 
-        <h2>SportsHub</h2>
+    <h2><a href="../index.php"><font size="6"><b>
+        SportsHub</b></font></a>
+    </h2>
 
-        <ul>
+    
+    <div class="sidebar-menu">
+    <a href="dashboard.php" >
+        <span class="menu-icon">
+            <i data-lucide="gauge"></i>
+        </span>
+        <span>Dashboard</span>
+    </a>
 
-            <li>
-                <a href="dashboard.php">
-                    Dashboard
-                </a>
-            </li>
+    <a href="clubs.php">
+        <span class="menu-icon">
+            <i data-lucide="medal"></i>
+        </span>
+        <span>Sports Clubs</span>
+    </a>
 
-            <li>
-                <a href="clubs.php">
-                    Sports Clubs
-                </a>
-            </li>
+    <a href="members.php">
+        <span class="menu-icon">
+            <i data-lucide="users"></i>
+        </span>
+        <span>Members</span>
+    </a>
 
-            <li>
-                <a href="members.php">
-                    Members
-                </a>
-            </li>
+    <a href="training.php" class="active">
+        <span class="menu-icon">
+            <i data-lucide="dumbbell"></i>
+        </span>
+        <span>Training Sessions</span>
+    </a>
 
-            <li>
-                <a href="training.php" class="active">
-                    Training
-                </a>
-            </li>
+    <a href="matches.php">
+        <span class="menu-icon">
+            <i data-lucide="volleyball"></i>
+        </span>
+        <span>Matches</span>
+    </a>
 
-            <li>
-                <a href="#">
-                    Matches
-                </a>
-            </li>
+    <a href="tournaments.php">
+        <span class="menu-icon">
+            <i data-lucide="trophy"></i>
+        </span>
+        <span>Tournaments</span>
+    </a>
 
-            <li>
-                <a href="#">
-                    Tournaments
-                </a>
-            </li>
+    <a href="fixtures.php">
+        <span class="menu-icon">
+            <i data-lucide="calendar-days"></i>
+        </span>
+        <span>Fixtures</span>
+    </a>
 
-            <li>
-                <a href="#">
-                    Fixtures
-                </a>
-            </li>
+    <a href="match_results.php">
+        <span class="menu-icon">
+            <i data-lucide="award"></i>
+        </span>
+        <span>Match Results</span>
+    </a>
 
-            <li>
-                <a href="#">
-                    Results
-                </a>
-            </li>
+    <a href="facilities.php">
+        <span class="menu-icon">
+            <i data-lucide="building-2"></i>
+        </span>
+        <span>Facilities</span>
+    </a>
 
-            <li>
-                <a href="#">
-                    Facilities
-                </a>
-            </li>
+    <a href="bookings.php">
+        <span class="menu-icon">
+            <i data-lucide="clipboard-list"></i>
+        </span>
+        <span>Bookings</span>
+    </a>
 
-            <li>
-                <a href="#">
-                    Bookings
-                </a>
-            </li>
+    <a href="participation.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-pie"></i>
+        </span>
+        <span>Participation Management</span>
+    </a>
 
-            <li>
-                <a href="#">
-                    Reports
-                </a>
-            </li>
+    <a href="reports.php">
+        <span class="menu-icon">
+            <i data-lucide="chart-no-axes-combined"></i>
+        </span>
+        <span>Reports & Statistics</span>
+    </a>
+</div>
+    
+    
+    <a href="../logout.php" class="logout-btn">Logout</a>
 
-        </ul>
 
-
-        <a href="../logout.php" class="logout-btn">
-            Logout
-        </a>
-
-    </aside>
+</div>
 
 
     <!-- MAIN CONTENT -->
