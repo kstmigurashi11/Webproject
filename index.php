@@ -138,17 +138,17 @@ session_start();
             <div class="feature-box" onclick="location.href='<?php echo $f1; ?>'">
                 <i class="fa-solid fa-users-rectangle"></i>
                 <h3>Club Management</h3>
-                <p>Register sports clubs, review student membership requests, and control activities smoothly[cite: 1].</p>
+                <p>Register sports clubs, review student membership requests, and control activities smoothly.</p>
             </div>
             <div class="feature-box" onclick="location.href='<?php echo $f2; ?>'">
                 <i class="fa-solid fa-calendar-days"></i>
                 <h3>Facility Bookings</h3>
-                <p>Schedule training grounds, indoor courts, and equipment slots without booking conflicts[cite: 1].</p>
+                <p>Schedule training grounds, indoor courts, and equipment slots without booking conflicts.</p>
             </div>
             <div class="feature-box" onclick="location.href='<?php echo $f3; ?>'">
                 <i class="fa-solid fa-trophy"></i>
                 <h3>Tournaments & Fixtures</h3>
-                <p>Generate tournament brackets, track match scores in real time, and publish leaderboards[cite: 1].</p>
+                <p>Generate tournament brackets, track match scores in real time, and publish leaderboards.</p>
             </div>
         </div>
     </section>
